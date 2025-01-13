@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "https://investing-ideas-backend.onrender.com/";
+const URL = "https://investing-ideas-backend.onrender.com";
 
 // Funzione fetcher per ottenere i dati dell'azienda
 export const fetchCompanyData = async (ticker, updateCompanyData) => {
