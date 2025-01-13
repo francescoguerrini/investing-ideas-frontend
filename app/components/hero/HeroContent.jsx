@@ -34,18 +34,18 @@ const HeroContent = () => {
           {companyData.name}
         </div>
 
-        <div>
+        <div className="flex flex-col gap-2 md:gap-4">
           <div className="w-full flex">
             <div className="w-full justify-start">
               <p>Prezzo </p>
-              <strong className="text-lg">
+              <strong className="md:text-lg">
                 {companyData.current_price} USD
               </strong>
             </div>
             <div className="w-full justify-start">
               <p>Performance 2024 </p>
               <strong
-                className={`text-lg ${
+                className={`md:text-lg ${
                   companyData.performance.startsWith("-")
                     ? "text-red-500"
                     : "text-green-500"
@@ -60,11 +60,11 @@ const HeroContent = () => {
           <div className="w-full flex">
             <div className="w-full justify-start">
               <p>Comparto </p>
-              <strong className="text-lg">{companyData.industry}</strong>
+              <strong className="md:text-lg">{companyData.industry}</strong>
             </div>
             <div className="w-full justify-start">
               <p>Market Cap </p>
-              <strong className="text-lg">
+              <strong className="md:text-lg">
                 {companyData.market_cap.toLocaleString()} USD
               </strong>
             </div>
@@ -73,11 +73,13 @@ const HeroContent = () => {
           <div className="w-full flex">
             <div className="w-full justify-start">
               <p>Dividendi </p>
-              <strong className="text-lg">{companyData.dividend_yield}</strong>
+              <strong className="md:text-lg">
+                {companyData.dividend_yield}
+              </strong>
             </div>
             <div className="w-full justify-start">
               <p>P/E Ratio </p>
-              <strong className="text-lg">{companyData.pe_ratio}</strong>
+              <strong className="md:text-lg">{companyData.pe_ratio}</strong>
             </div>
           </div>
         </div>
