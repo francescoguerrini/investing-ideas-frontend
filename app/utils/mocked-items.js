@@ -1,6 +1,3 @@
-// -creare interfaccia grafica con dati mock
-// -----dividere categorie investimento e news
-// -aggiungere api yahoo finance
 
 const ITEMS = [
   {
